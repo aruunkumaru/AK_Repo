@@ -19,7 +19,7 @@ resource "google_data_loss_prevention_inspect_template" "dlp_pdf_template" {
 
   inspect_config {
     info_types {
-      name = "EMAIL_ADDRESS"
+      name = "AK_Man_Redact"
     }
    }
 
