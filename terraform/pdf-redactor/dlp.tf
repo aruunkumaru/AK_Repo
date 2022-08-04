@@ -23,8 +23,9 @@ resource "google_data_loss_prevention_inspect_template" "dlp_pdf_template" {
       name = "AK_Man_Redact"
     }
    }
-]
+
   depends_on = [
     module.project_services,
   ]
+    ]
 }
