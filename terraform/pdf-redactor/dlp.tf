@@ -18,11 +18,12 @@ resource "google_data_loss_prevention_inspect_template" "dlp_pdf_template" {
   display_name = "pdf_redaction_dlp_template"
 
   inspect_config {
+    customInfoTypes [
     info_types {
       name = "AK_Man_Redact"
     }
    }
-
+]
   depends_on = [
     module.project_services,
   ]
