@@ -21,19 +21,7 @@ resource "google_data_loss_prevention_inspect_template" "dlp_pdf_template" {
     info_types {
       name = "EMAIL_ADDRESS"
     }
-    info_types {
-      name = "PERSON_NAME"
-    }
-    info_types {
-      name = "LAST_NAME"
-    }
-    info_types {
-      name = "PHONE_NUMBER"
-    }
-    info_types {
-      name = "FIRST_NAME"
-    }
-  }
+   }
 
   depends_on = [
     module.project_services,
